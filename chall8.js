@@ -50,9 +50,9 @@ console.log(Vowel(arrayVowels))
 //6-Unique elements of array
 let array =[1,2,3,4,5,6,7,8,54]
 let array6=[1,2,54,5,7,24,60,58]
-function findCommonElements(arr1, arr2) {
+function findUniqueElements(arr1, arr2) {
     let exist = false;
-    let arraycommon=[];
+    let arrayunique=[];
     for(i in arr1){
         for(y in arr2){
             if(arr1[i]==arr2[y]){
@@ -60,7 +60,7 @@ function findCommonElements(arr1, arr2) {
             }
         }
         if(exist==false){
-            arraycommon.push(arr1[i]);
+            arrayunique.push(arr1[i]);
         }
         exist=false;
     }
@@ -71,10 +71,10 @@ function findCommonElements(arr1, arr2) {
             }
         }
         if(exist==false){
-            arraycommon.push(arr2[i]);
+            arrayunique.push(arr2[i]);
         }
         exist=false;
     }
-return arraycommon;
+return arrayunique;
 }
-console.log(findCommonElements(array,array6));
+console.log(findUniqueElements(array,array6));
