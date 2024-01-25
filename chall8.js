@@ -38,7 +38,7 @@ function age(tryy){
     }
     return array2
 }
-console.log(age(array1))
+console.log(age(Persons))
 
 //5-Vowels removed
 let arrayVowels = "Hello My name Is Something"
